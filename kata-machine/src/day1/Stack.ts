@@ -32,7 +32,7 @@ export default class Stack<T> {
         if (this.length === 0) {
             const head = this.head as Node<T>;
             this.head = undefined;
-            return head.value;
+            return head?.value;
         }
 
         const head = this.head as Node<T>;
